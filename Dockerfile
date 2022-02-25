@@ -4,7 +4,7 @@ WORKDIR /app
 COPY ./tau-dashboard/package*.json ./
 RUN npm install
 COPY ./tau-dashboard /app
-RUN npm run build
+# RUN npm run build
 
 # prododuction stage
 FROM python:3.8 as prod-stage
